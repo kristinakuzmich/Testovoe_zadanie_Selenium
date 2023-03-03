@@ -8,7 +8,7 @@ public class CFPage {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
-    @FindBy(xpath = "//span[text()='Êóçüìè÷ Ì.È.']")
+    @FindBy(xpath = "//span[text()='ĞšÑƒĞ·ÑŒĞ¼Ğ¸Ñ‡ Ğœ.Ğ˜.']")
     private WebElement userMenu;
     public String getUserName() {
         String userName = userMenu.getText();
