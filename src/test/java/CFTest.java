@@ -20,7 +20,7 @@ public class CFTest {
         loginPage.inputPasswd("cash_bnb");
         loginPage.clickLoginBtn();
         String user = profilePage.getUserName();
-        String name= "Êóçüìè÷ Ì.È.";
+        String name= "ÐšÑƒÐ·ÑŒÐ¼Ð¸Ñ‡ Ðœ.Ð˜.";
         Assert.assertEquals(name, user); }
     @AfterClass
     public static void tearDown() {
