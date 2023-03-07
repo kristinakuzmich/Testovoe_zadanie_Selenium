@@ -10,14 +10,20 @@ public class SingletonDriver {
         driver = new ChromeDriver();
     }
 
-    public static SingletonDriver getInstanceOfSingletonDriver() {
+    private static SingletonDriver getInstanceOfSingletonDriver() {
         if (instanceOfSingletonDriver == null) {
             instanceOfSingletonDriver = new SingletonDriver();
         }
         return instanceOfSingletonDriver;
     }
 
-    public WebDriver getDriver() {
-        return driver;
+    public static WebDriver getDriver() {
+        return getInstanceOfSingletonDriver().driver;
+    }
+
+    public static void closeDriver(){
+        if(instanceOfSingletonDriver!=null){
+            instanceOfSingletonDriver.driver.close();
+        }
     }
 }

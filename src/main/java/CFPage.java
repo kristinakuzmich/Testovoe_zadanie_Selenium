@@ -4,16 +4,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class CFPage extends PageBaseClass {
 
-    public CFPage(WebDriver driver) {
-        super(driver);
-    }
-
     @FindBy(xpath = "//span[text()='Кузьмич М.И.']")
     private WebElement userMenu;
 
     public String getUserName() {
-        String userName = userMenu.getText();
-        return userName;
+        return userMenu.getText();
     }
 
     public void entryMenu() {

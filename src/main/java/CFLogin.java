@@ -3,9 +3,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CFLogin extends PageBaseClass {
-    public CFLogin(WebDriver driver) {
-        super(driver);
-    }
 
     @FindBy(xpath = "//*[contains(@id, 'j_username')]")
     private WebElement loginField;
