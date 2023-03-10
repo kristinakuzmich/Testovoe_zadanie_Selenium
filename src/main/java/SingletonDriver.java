@@ -1,28 +1,31 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import java.time.Duration;
 
 public class SingletonDriver {
     private static SingletonDriver instanceOfSingletonDriver = null;
     private WebDriver driver;
-
     private SingletonDriver() {
         System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(ops);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-
     private static SingletonDriver getInstanceOfSingletonDriver() {
         if (instanceOfSingletonDriver == null) {
             instanceOfSingletonDriver = new SingletonDriver();
         }
         return instanceOfSingletonDriver;
     }
-
     public static WebDriver getDriver() {
         return getInstanceOfSingletonDriver().driver;
     }
-
-    public static void closeDriver(){
-        if(instanceOfSingletonDriver!=null){
+    public static void closeDriver() {
+        if (instanceOfSingletonDriver != null) {
             instanceOfSingletonDriver.driver.close();
         }
     }
