@@ -13,6 +13,9 @@ public class AuthorizationTest {
         loginPage.inputLogin("bnbkass36");
         loginPage.inputPasswd("cash_bnb");
         loginPage.clickLoginBtn();
+        Thread.sleep(2000);
+        loginPage.clickOK();
+        Thread.sleep(2000);
     }
     @AfterMethod
     public void closeCF() {
