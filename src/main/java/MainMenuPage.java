@@ -1,11 +1,11 @@
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 public class MainMenuPage extends PageBaseClass {
-    @FindBy(xpath = "//span[text()='Кузьмич М.И.']")
+    @FindBy(xpath = "//span[text()='РљСѓР·СЊРјРёС‡ Рњ.Р.']")
     private WebElement userMenu;
     @FindBy(xpath = "//*[contains(@id, 'left-menu-form:tabView:treeFilterInput')]")
     private WebElement searchField;
-    @FindBy(xpath = "//span[contains(text(),'Прием по документам')]")
+    @FindBy(xpath = "//span[contains(text(),'РџСЂРёРµРј РїРѕ РґРѕРєСѓРјРµРЅС‚Р°Рј')]")
     private WebElement docField;
     @FindBy(xpath = "//span[@class='ui-growl-title']")
     private WebElement messText;
