@@ -8,14 +8,12 @@ public class AuthorizationTest {
         SingletonDriver.getDriver().get(ConfProperties.getProperty("loginpage"));
     }
     @BeforeMethod
-    public static void openCF() throws InterruptedException {
-        Thread.sleep(3000);
-        loginPage.inputLogin("bnbkass36");
-        loginPage.inputPasswd("cash_bnb");
+    public static void openCF(){
+        loginPage.inputLogin(ConfProperties.getProperty("login"));
+        loginPage.inputPasswd(ConfProperties.getProperty("password"));
         loginPage.clickLoginBtn();
-        Thread.sleep(2000);
-        loginPage.clickOK();
-        Thread.sleep(2000);
+        String username = menuPage.getUserName();
+        Assert.assertEquals(ConfProperties.getProperty("user"), username);
     }
     @AfterMethod
     public void closeCF() {

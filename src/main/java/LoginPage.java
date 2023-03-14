@@ -1,5 +1,8 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
 public class LoginPage extends PageBaseClass {
     @FindBy(xpath = "//*[contains(@id, 'j_username')]")
     private WebElement loginField;
@@ -7,11 +10,6 @@ public class LoginPage extends PageBaseClass {
     private WebElement passwdField;
     @FindBy(xpath = "//*[contains(@id, 'loginButton')]")
     private WebElement loginBtn;
-
-    @FindBy(xpath = "//button[@id='j_idt620']")
-    private WebElement OKBtn;
-
-
     public void inputLogin(String login) {
         loginField.sendKeys(login);
     }
@@ -20,8 +18,6 @@ public class LoginPage extends PageBaseClass {
     }
     public void clickLoginBtn() {
         loginBtn.click();
-    }
-    public void clickOK() {
-        OKBtn.click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("footer-form")));
     }
 }
