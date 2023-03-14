@@ -1,9 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.time.Duration;
-
 public class SingletonDriver {
     private static SingletonDriver instanceOfSingletonDriver = null;
     private WebDriver driver;
@@ -13,7 +10,6 @@ public class SingletonDriver {
         ops.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(ops);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
     private static SingletonDriver getInstanceOfSingletonDriver() {
         if (instanceOfSingletonDriver == null) {
