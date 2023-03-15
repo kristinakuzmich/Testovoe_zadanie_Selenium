@@ -1,7 +1,8 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 public class MainMenuPage extends PageBaseClass {
-    Expectation expectation=new Expectation();
     @FindBy(xpath = "//form[@id='footer-form']/div[@class='session']/span[1]")
     private WebElement userMenu;
     @FindBy(xpath = "//*[contains(@id, 'left-menu-form:tabView:treeFilterInput')]")
