@@ -10,6 +10,7 @@ public class SingletonDriver {
         ops.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(ops);
         driver.manage().window().maximize();
+
     }
     private static SingletonDriver getInstanceOfSingletonDriver() {
         if (instanceOfSingletonDriver == null) {

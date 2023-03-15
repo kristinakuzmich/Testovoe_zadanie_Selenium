@@ -1,8 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-public class ReceptionOfDocsPage extends PageBaseClass {
+public class ReceptionOfDocsPage extends PageBaseClass{
+    Expectation expectation=new Expectation();
     @FindBy(xpath = "//label[@id='main-content-form:kind_label']")
     private WebElement kindField;
     @FindBy(xpath = "//input[@id='main-content-form:amount_input']")
@@ -27,7 +27,7 @@ public class ReceptionOfDocsPage extends PageBaseClass {
     public void find(String currency){
     WebElement locRequiredUserName = findKindList(kindList, currency);
     locRequiredUserName.click();
-    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='ajaxStatusPanel']/div[@style='display: none;']")));
+        expectation.waitingLogoLoading();
     }
     public WebElement findKindList (WebElement kindList, String substitutionValue ) {
         String xpath = "//li[contains(text(),'%s')]";
@@ -45,7 +45,7 @@ public class ReceptionOfDocsPage extends PageBaseClass {
     }
     public void clickOpenBtn() {
         openBtn.click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='ajaxStatusPanel']/div[@style='display: none;']")));
+        expectation.waitingLogoLoading();
     }
     public void inputFio(String fio) {
         fioField.click();
@@ -53,10 +53,10 @@ public class ReceptionOfDocsPage extends PageBaseClass {
     }
     public void clickDocBtn() {
         docBtn.click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='ajaxStatusPanel']/div[@style='display: none;']")));
+        expectation.waitingLogoLoading();
     }
     public void clickContinueBtn() {
         continueBtn.click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='ajaxStatusPanel']/div[@style='display: none;']")));
+        expectation.waitingLogoLoading();
     }
 }
