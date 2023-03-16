@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Дополнен тест проверкой остатков на рм: проверяется изменение остатков после проведения операции." />
+    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Дополнен тест проверкой остатков на рм: проверяется изменение остатков после проведения операции.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Expectation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expectation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IssuanceAcceptionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IssuanceAcceptionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainMenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageBaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReceptionOfDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReceptionOfDocsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RemainsValuesPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RemainsValuesPopup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SingletonDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SingletonDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +73,11 @@
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.ReceptionOfDocsTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Testovoe_zadanie_Selenium" />
@@ -153,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678889146674</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Дополнен тест проверкой остатков на рм: проверяется изменение остатков после проведения операции.">
+      <created>1678889481279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678889481279</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

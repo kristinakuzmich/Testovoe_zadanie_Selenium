@@ -1,7 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-public class ReceptionOfDocsPage extends PageBaseClass{
+import java.math.BigDecimal;
+public class ReceptionOfDocsPage extends PageBaseClass {
     Expectation expectation=new Expectation();
     @FindBy(xpath = "//label[@id='main-content-form:kind_label']")
     private WebElement kindField;
@@ -19,6 +20,8 @@ public class ReceptionOfDocsPage extends PageBaseClass{
     private WebElement docBtn;
     @FindBy(xpath = "//*[contains(@id, 'main-content-form:confirm')]")
     private WebElement continueBtn;
+    @FindBy(xpath = "//label[@id='main-content-form:docType_label']")
+    private WebElement docType;
     public void clickKindList() {
         kindField.click();
     }
@@ -33,7 +36,7 @@ public class ReceptionOfDocsPage extends PageBaseClass{
         String xpath = "//li[contains(text(),'%s')]";
         return kindList.findElement(By.xpath(String.format(xpath, substitutionValue)));
     }
-    public void inputAmount(Integer amount) {
+    public void inputAmount(BigDecimal amount) {
         amountField.click();
         amountField.sendKeys(String.valueOf(amount));
     }
@@ -58,5 +61,8 @@ public class ReceptionOfDocsPage extends PageBaseClass{
     public void clickContinueBtn() {
         continueBtn.click();
         expectation.waitingLogoLoading();
+    }
+    public String getdocTypeText() {
+        return docType.getText();
     }
 }

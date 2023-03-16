@@ -1,12 +1,13 @@
 import org.testng.annotations.DataProvider;
+import java.math.BigDecimal;
 public class ReceptionOfDocsTestData {
-    static String businessProcess ="Прием по документам";
-    static String userName="Кузьмич Кристина Игоревна";
+    static String userName="Кузьмич Максим Игоревич";
+    static String currency="Белорусский рубль";
+    static BigDecimal amount= BigDecimal.valueOf(100);
     @DataProvider(name="testdata")
     public Object[][]dataSet(){
+        BookOfValuesTo exp=new BookOfValuesTo(MainMenuItems.PRIEMPODOCUMENTAM.getMessage(),userName,currency,amount);
         return new Object[][]
-                {
-                        {businessProcess,"Белорусский рубль",100,"Оплата по Договору","Платеж физического лица за приобретаемое",userName},
-                };
+                {{currency,amount,"Оплата по Договору","Платеж физического лица за приобретаемое",userName,exp}};
     }
 }

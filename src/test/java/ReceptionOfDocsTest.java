@@ -1,22 +1,23 @@
 import org.testng.Assert;
 import org.testng.annotations.*;
+import java.math.BigDecimal;
 public class ReceptionOfDocsTest extends AuthorizationTest {
     public static MainMenuPage menuPage = new MainMenuPage();
     public static ReceptionOfDocsPage docsPage = new ReceptionOfDocsPage();
     public static IssuanceAcceptionPage acceptPage = new IssuanceAcceptionPage();
     public static RemainsValuesPopup remainsValues = new RemainsValuesPopup();
+    BookOfValues bookOfValues=new BookOfValues();
     @Test(dataProvider = "testdata", dataProviderClass = ReceptionOfDocsTestData.class)
-    public void test(String searchText,
-                     String currency,
-                     int amount,
+    public void test(String currency,
+                     BigDecimal amount,
                      String purpose,
                      String description,
-                     String fio) {
+                     String fio,
+                     BookOfValuesTo exp) {
         remainsValues.remainsValuesClick();
-        int amountByn1= remainsValues.getByn();
+        BigDecimal amountByn1= remainsValues.getByn();
         remainsValues.cancelBtnClick();
-        menuPage.searchField(searchText);
-        menuPage.clickDoc();
+        menuPage.searchField(MainMenuItems.PRIEMPODOCUMENTAM.getMessage());
         docsPage.clickKindList();
         docsPage.find(currency);
         docsPage.inputAmount(amount);
@@ -31,8 +32,12 @@ public class ReceptionOfDocsTest extends AuthorizationTest {
         String message = menuPage.getMessText();
         Assert.assertEquals(Messages.OPERATIONISOVER.getMessage(), message);
         remainsValues.remainsValuesClick();
-        int amountByn2= remainsValues.getByn();
-        Assert.assertEquals(amountByn1 + amount, amountByn2);
+        BigDecimal amountByn2= remainsValues.getByn();
+        Assert.assertEquals(amountByn1.add(amount), amountByn2);
         remainsValues.cancelBtnClick();
+        menuPage.cleanField();
+        menuPage.searchField(MainMenuItems.BOOK.getMessage());
+        bookOfValues.search();
+        bookOfValues.check(exp);
     }
 }

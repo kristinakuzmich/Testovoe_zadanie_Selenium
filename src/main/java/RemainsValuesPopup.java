@@ -1,6 +1,9 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.math.BigDecimal;
+
 public class RemainsValuesPopup extends PageBaseClass {
     Expectation expectation=new Expectation();
     @FindBy(xpath = "//*[contains(@name, 'header-form:openWorkplaceBalanceDialogButton')]")
@@ -23,8 +26,8 @@ public class RemainsValuesPopup extends PageBaseClass {
         driver.switchTo().defaultContent();
         expectation.waitingMenuVisible();
     }
-    public int getByn(){
-        int amountByn = Integer.parseInt(readAmountByn().replaceAll("\\s+", "").replace(",00", ""));
+    public BigDecimal getByn(){
+        BigDecimal amountByn = new BigDecimal(readAmountByn().replaceAll("\\s+","").replace(",", "."));
         return amountByn;
     }
 }

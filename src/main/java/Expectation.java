@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 public class Expectation {
-    WebDriver driver=SingletonDriver.getDriver();
+    WebDriver driver= SingletonDriver.getDriver();
     Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     public void waitingLogoLoading(){
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='ajaxStatusPanel']/div[@style='display: none;']")));
@@ -16,8 +16,8 @@ public class Expectation {
     public void waitingLoginFormVisible(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("formLogin")));
     }
-    public void waitingMenuText(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Прием по документам')]")));
+    public void waitingMenuText(String value){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'"+value+"')]")));
     }
     public void waitingMenuVisible(){
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='menu']")));
