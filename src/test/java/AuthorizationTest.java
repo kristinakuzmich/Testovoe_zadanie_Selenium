@@ -8,7 +8,7 @@ public class AuthorizationTest {
         SingletonDriver.getDriver().get(ConfProperties.getProperty("loginpage"));
     }
     @BeforeMethod
-    public static void openCF(){
+    public void openCF(){
         loginPage.inputLogin(ConfProperties.getProperty("login"));
         loginPage.inputPasswd(ConfProperties.getProperty("password"));
         loginPage.clickLoginBtn();

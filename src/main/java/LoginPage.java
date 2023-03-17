@@ -1,9 +1,7 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
 public class LoginPage extends PageBaseClass {
+    Expectation expectation=new Expectation();
     @FindBy(xpath = "//*[contains(@id, 'j_username')]")
     private WebElement loginField;
     @FindBy(xpath = "//*[contains(@id, 'j_password')]")
@@ -18,6 +16,6 @@ public class LoginPage extends PageBaseClass {
     }
     public void clickLoginBtn() {
         loginBtn.click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("footer-form")));
+        expectation.waitingMenuVisible();
     }
 }
