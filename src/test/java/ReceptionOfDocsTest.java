@@ -1,43 +1,23 @@
-import org.testng.Assert;
 import org.testng.annotations.*;
-import java.math.BigDecimal;
 public class ReceptionOfDocsTest extends AuthorizationTest {
     public static MainMenuPage menuPage = new MainMenuPage();
+    public static MessagesProcessing messagesProcessing = new MessagesProcessing();
     public static ReceptionOfDocsPage docsPage = new ReceptionOfDocsPage();
     public static IssuanceAcceptionPage acceptPage = new IssuanceAcceptionPage();
     public static RemainsValuesPopup remainsValues = new RemainsValuesPopup();
-    BookOfValues bookOfValues=new BookOfValues();
+    BookOfValuesPage bookOfValuesPage =new BookOfValuesPage();
     @Test(dataProvider = "testdata", dataProviderClass = ReceptionOfDocsTestData.class)
-    public void test(String currency,
-                     BigDecimal amount,
-                     String purpose,
-                     String description,
-                     String fio,
-                     BookOfValuesTo exp) {
-        remainsValues.remainsValuesClick();
-        BigDecimal amountByn1= remainsValues.getByn();
-        remainsValues.cancelBtnClick();
+    public void test(DocTo doc,
+                     BookOfValuesTo exp,
+                     ValuesTo val) {
+        remainsValues.fixRemains();
         menuPage.searchField(MainMenuItems.PRIEMPODOCUMENTAM.getMessage());
-        docsPage.clickKindList();
-        docsPage.find(currency);
-        docsPage.inputAmount(amount);
-        docsPage.inputPurpose(purpose);
-        docsPage.inputDescription(description);
-        docsPage.clickOpenBtn();
-        docsPage.inputFio(fio);
-        docsPage.clickDocBtn();
-        docsPage.clickContinueBtn();
-        acceptPage.inputAmount(amount);
-        acceptPage.clickContinueBtn();
-        String message = menuPage.getMessText();
-        Assert.assertEquals(Messages.OPERATIONISOVER.getMessage(), message);
-        remainsValues.remainsValuesClick();
-        BigDecimal amountByn2= remainsValues.getByn();
-        Assert.assertEquals(amountByn1.add(amount), amountByn2);
-        remainsValues.cancelBtnClick();
-        menuPage.cleanField();
+        docsPage.inputDataInReceptionOfDocs(val.getCurrency().getCurrency(),val.getAmount(),doc.getPurpose(),doc.getDescription(),doc.getUserName());
+        acceptPage.inputAmount(val.getAmount());
+        messagesProcessing.isAssertMessageOperationIsOver();
+        remainsValues.compareRemains();
         menuPage.searchField(MainMenuItems.BOOK.getMessage());
-        bookOfValues.search();
-        bookOfValues.check(exp);
+        bookOfValuesPage.search();
+        bookOfValuesPage.check(exp);
     }
 }

@@ -15,6 +15,7 @@ public class MainMenuPage extends PageBaseClass {
         return userMenu.getText();
     }
     public void searchField(String value) {
+        searchField.clear();
         searchField.sendKeys(value);
         expectation.waitingMenuText(value);
         WebElement docField= driver.findElement(By.xpath("//span[contains(text(),'"+value+"')]"));
@@ -27,8 +28,5 @@ public class MainMenuPage extends PageBaseClass {
     public void exitCF() {
         exitBtn.click();
         expectation.waitingLoginFormVisible();
-    }
-    public void cleanField(){
-        searchField.clear();
     }
 }

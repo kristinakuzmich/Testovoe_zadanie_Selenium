@@ -10,6 +10,7 @@ public class IssuanceAcceptionPage extends PageBaseClass {
     public void inputAmount(BigDecimal amount) {
         amountField.click();
         amountField.sendKeys(String.valueOf(amount));
+        clickContinueBtn();
     }
     public void clickContinueBtn() {
         continueBtn.click();

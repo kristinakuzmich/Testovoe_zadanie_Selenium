@@ -1,7 +1,6 @@
 public enum Messages {
     OPERATIONISOVER("Операция завершена");
-    private String message;
-
+    public String message;
     Messages(String message) {
         this.message = message;
     }
