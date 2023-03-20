@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-public class BookOfValues extends PageBaseClass {
+public class BookOfValuesPage extends PageBaseClass {
     Expectation expectation=new Expectation();
     BookOfValuesFactory bookOfValuesFactory=new BookOfValuesFactory();
     @FindBy(xpath = "//label[@id='main-content-form:kindList_label']")

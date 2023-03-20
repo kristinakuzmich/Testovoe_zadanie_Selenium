@@ -9,7 +9,9 @@ import java.util.Objects;
 @Builder
 @AllArgsConstructor
 public class BookOfValuesTo {
-    private String operation,fio,currency;
+    private String operation;
+    private String fio;
+    private String currency;
     private BigDecimal amount;
     @Override
     public String toString() {

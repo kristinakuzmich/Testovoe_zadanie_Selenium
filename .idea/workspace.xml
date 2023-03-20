@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Дополнен тест проверкой книги учета ценностей." />
+    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Дополнен тест проверкой книги учета ценностей.">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValues.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValuesTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookOfValuesTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IssuanceAcceptionPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageBaseClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReceptionOfDocsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RemainsValuesPopup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +47,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ccf5cc82-4966-4c84-9dd0-f43680f527e9" />
+        <option name="url" value="https://github.com/kristinakuzmich/Testovoe_zadanie_Selenium.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,19 +80,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/IdeaProjects/IdeaProjects/Testovoe_zadanie_Selenium",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/IdeaProjects/Testovoe_zadanie_Selenium&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pub" />
+    </option>
   </component>
   <component name="RunManager" selected="TestNG.ReceptionOfDocsTest">
     <configuration default="true" type="JetRunConfigurationType">
@@ -172,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678984498030</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Дополнен тест проверкой книги учета ценностей.">
+      <created>1678984557664</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678984557664</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
