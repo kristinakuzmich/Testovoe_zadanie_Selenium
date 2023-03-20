@@ -1,3 +1,5 @@
+package enums;
+
 public enum MoveType {
     ISSUE(0, "расход"),
     RECEIVE(1, "приход");

@@ -1,3 +1,5 @@
+package To;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,7 +17,7 @@ public class BookOfValuesTo {
     private BigDecimal amount;
     @Override
     public String toString() {
-        return "BookOfValuesTo{" +
+        return "To.BookOfValuesTo{" +
                 "operation='" + operation + '\'' +
                 ", fio='" + fio + '\'' +
                 ", currency='" + currency + '\'' +

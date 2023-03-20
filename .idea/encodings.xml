@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$/src/main/java/ConfProperties.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/Messages.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/Pages/IssuanceAcceptionPage.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/Pages/MainMenuPage.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/Pages/PageBaseClass.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/Pages/ReceptionOfDocsPage.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/SingletonDriver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/driver/SingletonDriver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/enums/Messages.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/pages/IssuanceAcceptionPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/pages/MainMenuPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/pages/PageBaseClass.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/pages/ReceptionOfDocsPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/properties/ConfProperties.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/testdata/ReceptionOfDocsTestData.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/AuthorizationTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

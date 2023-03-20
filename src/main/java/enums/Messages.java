@@ -1,3 +1,5 @@
+package enums;
+
 public enum Messages {
     OPERATIONISOVER("Операция завершена");
     public String message;

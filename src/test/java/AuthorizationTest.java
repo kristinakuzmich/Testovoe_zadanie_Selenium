@@ -1,5 +1,10 @@
+import driver.SingletonDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import pages.LoginPage;
+import pages.MainMenuPage;
+import properties.ConfProperties;
+
 public class AuthorizationTest {
     public static LoginPage loginPage = new LoginPage();
     public static MainMenuPage menuPage = new MainMenuPage();

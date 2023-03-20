@@ -4,22 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Дополнен тест проверкой книги учета ценностей.">
+    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="- Работа с остатками вызывается в одном методе.&#10;- Создан объект ценности val, в котором есть свойства суммы, валюты и типа движения (приход/расход).&#10;- Создан объект данных операции doc.&#10;- Добавлена проверка всех остатков на РМ, не только BYN.">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValues.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValuesTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookOfValuesTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IssuanceAcceptionPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuItems.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageBaseClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReceptionOfDocsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValuesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/BookOfValuesFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValuesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BookOfValuesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValuesTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/To/BookOfValuesTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/ConfProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DocTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/To/DocTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Expectation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expectations/Expectation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IssuanceAcceptionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/IssuanceAcceptionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/MainMenuItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainMenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MessagesProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assertion/MessagesProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MoveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/MoveType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PageBaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReceptionOfDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ReceptionOfDocsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RemainsValuesPopup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SingletonDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/SingletonDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ValuesTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/To/ValuesTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AuthorizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AuthorizationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testdata/ReceptionOfDocsTestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +62,12 @@
   }
 }]]></component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="kristinakuzmich" />
+        <option name="repository" value="Testovoe_zadanie_Selenium" />
+      </RepoCoordinatesHolder>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="ccf5cc82-4966-4c84-9dd0-f43680f527e9" />
@@ -92,6 +107,7 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+      <recent name="pages" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -213,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678984557664</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- Работа с остатками вызывается в одном методе.&#10;- Создан объект ценности val, в котором есть свойства суммы, валюты и типа движения (приход/расход).&#10;- Создан объект данных операции doc.&#10;- Добавлена проверка всех остатков на РМ, не только BYN.">
+      <created>1679065205007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679065205007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +256,15 @@
     <MESSAGE value="- Исправлен класс ConfProperties.java, добавлена переменная, которая указывает кодировку &quot;UTF-8&quot;.&#10;- Изменено ожидание с Thread.sleep() на явное wait (класса WebDriverWait). Метода создания переменной перенесен в класс PageBaseClass.&#10;- Создан класс enum Messages, в котором хранятся сообщени я приложения.&#10;- В классе ReceptionOfDocsTestData повторяющиеся данные подаются через переменные.&#10;- Данные пользователя подаются из файла Conf.properties." />
     <MESSAGE value="Дополнен тест проверкой остатков на рм: проверяется изменение остатков после проведения операции." />
     <MESSAGE value="Дополнен тест проверкой книги учета ценностей." />
-    <option name="LAST_COMMIT_MESSAGE" value="Дополнен тест проверкой книги учета ценностей." />
+    <MESSAGE value="- Работа с остатками вызывается в одном методе.&#10;- Создан объект ценности val, в котором есть свойства суммы, валюты и типа движения (приход/расход).&#10;- Создан объект данных операции doc.&#10;- Добавлена проверка всех остатков на РМ, не только BYN." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Работа с остатками вызывается в одном методе.&#10;- Создан объект ценности val, в котором есть свойства суммы, валюты и типа движения (приход/расход).&#10;- Создан объект данных операции doc.&#10;- Добавлена проверка всех остатков на РМ, не только BYN." />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="elements" />
+        <watch expression="elements" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -1,3 +1,5 @@
+package enums;
+
 public enum MainMenuItems {
     PRIEMPODOCUMENTAM("Прием по документам"),
     BOOK("Книга учета принятых и выданных ценностей");
