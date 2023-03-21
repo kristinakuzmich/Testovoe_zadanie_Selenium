@@ -7,9 +7,8 @@ import enums.MainMenuItems;
 import org.testng.annotations.*;
 import pages.*;
 import testdata.ReceptionOfDocsTestData;
-
 import java.util.List;
-
+import static enums.MainMenuItems.*;
 public class ReceptionOfDocsTest extends AuthorizationTest {
     public static MainMenuPage menuPage = new MainMenuPage();
     public static MessagesProcessing messagesProcessing = new MessagesProcessing();
@@ -18,11 +17,11 @@ public class ReceptionOfDocsTest extends AuthorizationTest {
     public static RemainsValuesPopup remainsValues = new RemainsValuesPopup();
     BookOfValuesPage bookOfValuesPage =new BookOfValuesPage();
     @Test(dataProvider = "testdata", dataProviderClass = ReceptionOfDocsTestData.class)
-    public void test(DocTo doc,
+    public void receptionOfDocsTest(DocTo doc,
                      BookOfValuesTo exp,
                      ValuesTo val) {
         List<RemainsValuesTo> listBefore=remainsValues.getRemains();
-        menuPage.searchField(MainMenuItems.PRIEMPODOCUMENTAM.getMessage());
+        menuPage.searchField(PRIEMPODOCUMENTAM.getMessage());
         docsPage.inputDataInReceptionOfDocs(val.getCurrency().getCurrency(),val.getAmount(),doc.getPurpose(),doc.getDescription(),doc.getUserName());
         acceptPage.inputAmount(val.getAmount());
         messagesProcessing.isAssertMessageOperationIsOver();

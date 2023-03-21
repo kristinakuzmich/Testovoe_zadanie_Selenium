@@ -25,7 +25,7 @@ public class RemainsValuesPopup extends PageBaseClass {
     public List<RemainsValuesTo> getRemains() {
         remainsValuesOpenPopUp();
         List<RemainsValuesTo> elements = new ArrayList<>();
-        List<WebElement> rows = driver.findElements(By.xpath("//tbody[@id='valuesBalanceForm:tab-view:j_idt42:0:j_idt43_data']/tr"));
+        List<WebElement> rows = driver.findElements(By.xpath("//tbody[contains(@id, 'valuesBalanceForm')]/tr"));
         for (WebElement row : rows) {
             String td2 = row.findElements(By.tagName("td")).get(1).getText();
             String td5 = row.findElements(By.tagName("span")).get(1).getText().replaceAll("\\s+", "").replace(",", ".");

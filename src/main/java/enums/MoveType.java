@@ -12,7 +12,6 @@ public enum MoveType {
     public int getFlag() {
         return flag;
     }
-
     public String getName() {
         return name;
     }
