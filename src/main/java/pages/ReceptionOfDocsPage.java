@@ -20,8 +20,6 @@ public class ReceptionOfDocsPage extends PageBaseClass {
     private WebElement fioField;
     @FindBy(xpath = "//input[@id='main-content-form:personalData']/following-sibling::label[@class='ui-outputlabel ui-widget']")
     private WebElement docBtn;
-    @FindBy(xpath = "//*[contains(@id, 'main-content-form:confirm')]")
-    private WebElement continueBtn;
     @FindBy(xpath = "//ul[@id='main-content-form:kind_items']")
     private WebElement kindList;
     public void inputDataInReceptionOfDocs(String currency,BigDecimal amount,String purpose,String description,String fio) {
@@ -38,7 +36,6 @@ public class ReceptionOfDocsPage extends PageBaseClass {
         fioField.sendKeys(fio);
         docBtn.click();
         expectation.waitingLogoLoading();
-        clickContinueBtn();
     }
     public WebElement findKindList (WebElement kindList, String currency ) {
         String xpath = "//li[contains(text(),'%s')]";
@@ -46,10 +43,6 @@ public class ReceptionOfDocsPage extends PageBaseClass {
     }
     public void clickOpenBtn() {
         openBtn.click();
-        expectation.waitingLogoLoading();
-    }
-    public void clickContinueBtn() {
-        continueBtn.click();
         expectation.waitingLogoLoading();
     }
 }
