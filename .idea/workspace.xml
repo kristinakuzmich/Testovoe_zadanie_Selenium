@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Задание 4&#10;1) Добавлены страницы для бп &quot;Покупка валюты&quot;;&#10;2) Добавлен новый дата-провайдер;&#10;3) Добавлен новый тест.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Expectations/Expectation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expectations/Expectation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assertion/MessagesProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assertion/MessagesProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/SingletonDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/SingletonDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/MainMenuItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/MainMenuItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/BookOfValuesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/BookOfValuesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BookOfValuesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BookOfValuesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BuyCurrencyExchangePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BuyCurrencyExchangePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BuyCurrencyNextPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BuyCurrencyNextPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BuyCurrencyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BuyCurrencyPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/IssuanceAcceptionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/IssuanceAcceptionPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainMenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PageBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PageBaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PrintedFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PrintedFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ReceptionOfDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ReceptionOfDocsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RemainsValuesPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RemainsValuesPopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/ConfProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testdata/BuyCurrencyTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testdata/BuyCurrencyTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testdata/ReceptionOfDocsTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testdata/ReceptionOfDocsTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AuthorizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AuthorizationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BuyCurrencyForCashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BuyCurrencyForCashTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -282,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679414095228</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце.">
+      <created>1679494788642</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679494788642</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,7 +287,8 @@
     <MESSAGE value="- Работа с остатками вызывается в одном методе.&#10;- Создан объект ценности val, в котором есть свойства суммы, валюты и типа движения (приход/расход).&#10;- Создан объект данных операции doc.&#10;- Добавлена проверка всех остатков на РМ, не только BYN." />
     <MESSAGE value="Исправлены замечания&#10;1) в метод compareRemains передаем Values To;&#10;2) добавлен новый объект на остатки RemainsValuesTo;&#10;3) изменены методы compareRemains и getRemains в классе RemainsValuesPopup." />
     <MESSAGE value="Задание 4&#10;1) Добавлены страницы для бп &quot;Покупка валюты&quot;;&#10;2) Добавлен новый дата-провайдер;&#10;3) Добавлен новый тест." />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 4&#10;1) Добавлены страницы для бп &quot;Покупка валюты&quot;;&#10;2) Добавлен новый дата-провайдер;&#10;3) Добавлен новый тест." />
+    <MESSAGE value="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце." />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

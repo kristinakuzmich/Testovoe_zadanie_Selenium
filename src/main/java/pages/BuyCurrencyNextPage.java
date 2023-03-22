@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import java.math.BigDecimal;
 public class BuyCurrencyNextPage extends PageBaseClass{
     Expectation expectation=new Expectation();
-    Button button=new Button();
     @FindBy(xpath = "//input[@id='main-content-form:dataTableId:0:received_input']")
     private WebElement currencyField;
     public void inputCurrencyField(BigDecimal amount){
@@ -16,6 +15,5 @@ public class BuyCurrencyNextPage extends PageBaseClass{
         currencyField.sendKeys(String.valueOf(amount));
         driver.findElement(By.tagName("h1")).click();
         expectation.waitingLogoLoading();
-        button.clickContinueBtn();
     }
 }
