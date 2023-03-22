@@ -1,5 +1,4 @@
 package pages;
-
 import Expectations.Expectation;
 import To.RemainsValuesTo;
 import To.ValuesTo;
@@ -8,14 +7,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 public class RemainsValuesPopup extends PageBaseClass {
     Expectation expectation = new Expectation();
-    BigDecimal currentDec;
+    BigDecimal currentDec,currentUsd,currentByn,exch;
     @FindBy(xpath = "//*[contains(@name, 'header-form:openWorkplaceBalanceDialogButton')]")
     private WebElement remainsOfValuesOpenPopUpField;
     @FindBy(xpath = "//span[contains(text(),'Отменить')]")
@@ -61,5 +59,30 @@ public class RemainsValuesPopup extends PageBaseClass {
         remainsOfValuesClosePopUpBtn.click();
         driver.switchTo().defaultContent();
         expectation.waitingMenuVisible();
+    }
+    //Метод для покупки валюты
+    public void compareRemainsAfterBuyingCurrency(ValuesTo valUSD,ValuesTo valBYN, List<RemainsValuesTo> listBefore){
+        List<RemainsValuesTo> actualList = getRemains();
+        listBefore = changeRemains(valUSD,valBYN, listBefore);
+        Assert.assertEquals(actualList, listBefore);
+    }
+    public List<RemainsValuesTo> changeRemains(ValuesTo valUSD,ValuesTo valBYN, List<RemainsValuesTo> listBefore){
+        driver.findElement(By.xpath("//span[contains(text(),'Курсы валют')]")).click();
+        expectation.waitingLogoLoading();
+        exch= new BigDecimal(driver.findElement(By.xpath("//tbody[contains(@id, 'header-form:currency-rates-panel')]/tr[1]/td[2]")).getText().replace(",", "."));
+
+        currentUsd = containsCurrency(listBefore, valUSD.getCurrency()).get().getAmount();
+        if (valUSD.getTypeOfMovement().getFlag() == 0) {
+            containsCurrency(listBefore, valUSD.getCurrency()).get().setAmount(currentUsd.subtract(valUSD.getAmount()));
+        } else {
+            containsCurrency(listBefore, valUSD.getCurrency()).get().setAmount(currentUsd.add(valUSD.getAmount()));
+        }
+        currentByn = containsCurrency(listBefore, valBYN.getCurrency()).get().getAmount();
+        if (valBYN.getTypeOfMovement().getFlag() == 0) {
+            containsCurrency(listBefore, valBYN.getCurrency()).get().setAmount(currentByn.subtract(valBYN.getAmount().multiply(exch).setScale(2)));
+        } else {
+            containsCurrency(listBefore, valBYN.getCurrency()).get().setAmount(currentByn.add(valBYN.getAmount().multiply(exch).setScale(2)));
+        }
+        return listBefore;
     }
 }

@@ -1,10 +1,8 @@
 package pages;
-
 import Expectations.Expectation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class MainMenuPage extends PageBaseClass {
     Expectation expectation=new Expectation();
     @FindBy(xpath = "//form[@id='footer-form']/div[@class='session']/span[1]")

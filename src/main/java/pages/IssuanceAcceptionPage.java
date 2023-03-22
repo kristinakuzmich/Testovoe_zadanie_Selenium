@@ -1,9 +1,7 @@
 package pages;
-
 import Expectations.Expectation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.math.BigDecimal;
 public class IssuanceAcceptionPage extends PageBaseClass {
     Expectation expectation=new Expectation();

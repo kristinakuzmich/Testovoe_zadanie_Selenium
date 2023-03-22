@@ -1,9 +1,7 @@
 package pages;
-
 import Expectations.Expectation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class LoginPage extends PageBaseClass {
     Expectation expectation=new Expectation();
     @FindBy(xpath = "//*[contains(@id, 'j_username')]")

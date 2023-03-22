@@ -56,6 +56,13 @@
             <version>7.7.1</version>
             <scope>compile</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>6.12.3</version>
+        </dependency>
+
     </dependencies>
 
 </project>

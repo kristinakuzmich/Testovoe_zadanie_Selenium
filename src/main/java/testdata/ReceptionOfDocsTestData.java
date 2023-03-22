@@ -9,7 +9,6 @@ import enums.MainMenuItems;
 import enums.MoveType;
 import org.testng.annotations.DataProvider;
 import properties.ConfProperties;
-
 import java.math.BigDecimal;
 public class ReceptionOfDocsTestData {
     @DataProvider(name="testdata")

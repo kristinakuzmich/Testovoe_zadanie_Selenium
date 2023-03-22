@@ -1,5 +1,4 @@
 package pages;
-
 import Expectations.Expectation;
 import To.BookOfValuesTo;
 import factory.BookOfValuesFactory;
@@ -7,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-
 public class BookOfValuesPage extends PageBaseClass {
     Expectation expectation=new Expectation();
     BookOfValuesFactory bookOfValuesFactory=new BookOfValuesFactory();
