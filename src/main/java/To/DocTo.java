@@ -1,3 +1,5 @@
+package To;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -12,7 +14,7 @@ public class DocTo {
     private String userName;
     @Override
     public String toString() {
-        return "DocTo{" +
+        return "To.DocTo{" +
                 "purpose='" + purpose + '\'' +
                 ", description='" + description + '\'' +
                 ", userName='" + userName + '\'' +

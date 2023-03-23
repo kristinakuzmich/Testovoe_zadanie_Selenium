@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Дополнен тест проверкой книги учета ценностей.">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Исправила вызов метода класса Button.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValues.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookOfValuesTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookOfValuesTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IssuanceAcceptionPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuItems.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainMenuPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageBaseClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReceptionOfDocsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RemainsValuesPopup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +40,12 @@
   }
 }]]></component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="kristinakuzmich" />
+        <option name="repository" value="Testovoe_zadanie_Selenium" />
+      </RepoCoordinatesHolder>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="ccf5cc82-4966-4c84-9dd0-f43680f527e9" />
@@ -92,6 +85,7 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+      <recent name="pages" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -99,7 +93,7 @@
       <command value="pub" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ReceptionOfDocsTest">
+  <component name="RunManager" selected="TestNG.BuyCurrencyForCashTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Testovoe_zadanie_Selenium" />
       <method v="2">
@@ -118,6 +112,29 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AuthorizationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyCurrencyForCashTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestLogin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BuyCurrencyForCashTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyCurrencyForCashTest.buyCashTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestLogin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BuyCurrencyForCashTest" />
+      <option name="METHOD_NAME" value="buyCashTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,6 +166,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BuyCurrencyForCashTest" />
+        <item itemvalue="TestNG.BuyCurrencyForCashTest.buyCashTest" />
         <item itemvalue="TestNG.ReceptionOfDocsTest" />
         <item itemvalue="TestNG.ReceptionOfDocsTest.test" />
         <item itemvalue="TestNG.AuthorizationTest" />
@@ -213,7 +232,49 @@
       <option name="project" value="LOCAL" />
       <updated>1678984557664</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- Работа с остатками вызывается в одном методе.&#10;- Создан объект ценности val, в котором есть свойства суммы, валюты и типа движения (приход/расход).&#10;- Создан объект данных операции doc.&#10;- Добавлена проверка всех остатков на РМ, не только BYN.">
+      <created>1679065205007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679065205007</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Исправлены замечания&#10;1) в метод compareRemains передаем Values To;&#10;2) добавлен новый объект на остатки RemainsValuesTo;&#10;3) изменены методы compareRemains и getRemains в классе RemainsValuesPopup.">
+      <created>1679322931412</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679322931412</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Исправлены замечания&#10;1) в метод compareRemains передаем Values To;&#10;2) добавлен новый объект на остатки RemainsValuesTo;&#10;3) изменены методы compareRemains и getRemains в классе RemainsValuesPopup.">
+      <created>1679322943062</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679322943062</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Задание 4&#10;1) Добавлены страницы для бп &quot;Покупка валюты&quot;;&#10;2) Добавлен новый дата-провайдер;&#10;3) Добавлен новый тест.">
+      <created>1679414095228</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679414095228</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце.">
+      <created>1679494788642</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679494788642</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Исправила вызов метода класса Button.">
+      <created>1679496226805</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679496226805</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +294,25 @@
     <MESSAGE value="- Исправлен класс ConfProperties.java, добавлена переменная, которая указывает кодировку &quot;UTF-8&quot;.&#10;- Изменено ожидание с Thread.sleep() на явное wait (класса WebDriverWait). Метода создания переменной перенесен в класс PageBaseClass.&#10;- Создан класс enum Messages, в котором хранятся сообщени я приложения.&#10;- В классе ReceptionOfDocsTestData повторяющиеся данные подаются через переменные.&#10;- Данные пользователя подаются из файла Conf.properties." />
     <MESSAGE value="Дополнен тест проверкой остатков на рм: проверяется изменение остатков после проведения операции." />
     <MESSAGE value="Дополнен тест проверкой книги учета ценностей." />
-    <option name="LAST_COMMIT_MESSAGE" value="Дополнен тест проверкой книги учета ценностей." />
+    <MESSAGE value="- Работа с остатками вызывается в одном методе.&#10;- Создан объект ценности val, в котором есть свойства суммы, валюты и типа движения (приход/расход).&#10;- Создан объект данных операции doc.&#10;- Добавлена проверка всех остатков на РМ, не только BYN." />
+    <MESSAGE value="Исправлены замечания&#10;1) в метод compareRemains передаем Values To;&#10;2) добавлен новый объект на остатки RemainsValuesTo;&#10;3) изменены методы compareRemains и getRemains в классе RemainsValuesPopup." />
+    <MESSAGE value="Задание 4&#10;1) Добавлены страницы для бп &quot;Покупка валюты&quot;;&#10;2) Добавлен новый дата-провайдер;&#10;3) Добавлен новый тест." />
+    <MESSAGE value="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце." />
+    <MESSAGE value="Исправила вызов метода класса Button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправила вызов метода класса Button." />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.NumberFormatException" memberName="backtrace" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="elements" />
+        <watch expression="elements" />
+        <watch expression="driver" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

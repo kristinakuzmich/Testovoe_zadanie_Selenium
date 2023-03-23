@@ -1,3 +1,7 @@
+package To;
+
+import enums.Currency;
+import enums.MoveType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,7 +17,7 @@ public class ValuesTo {
     private BigDecimal amount;
     @Override
     public String toString() {
-        return "ValuesTo{" +
+        return "To.ValuesTo{" +
                 "currency='" + currency + '\'' +
                 ", typeOfMovement='" + typeOfMovement + '\'' +
                 ", amount=" + amount +

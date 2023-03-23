@@ -1,3 +1,5 @@
+package enums;
+
 public enum MoveType {
     ISSUE(0, "расход"),
     RECEIVE(1, "приход");
@@ -10,7 +12,6 @@ public enum MoveType {
     public int getFlag() {
         return flag;
     }
-
     public String getName() {
         return name;
     }
