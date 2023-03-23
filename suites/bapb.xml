@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bapb">
+    <groups>
+        <run>
+            <exclude name="tech"/>
+        </run>
+    </groups>
+    <test name="testing">
+        <classes>
+            <class name="BuyCurrencyForCashTest"/>
+            <class name="ReceptionOfDocsTest"/>
+        </classes>
+    </test>
+</suite>

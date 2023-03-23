@@ -18,8 +18,8 @@ public class ReceptionOfDocsTest extends AuthorizationTest {
     public static RemainsValuesPopup remainsValues = new RemainsValuesPopup();
     public static BookOfValuesPage bookOfValuesPage =new BookOfValuesPage();
     public static Button button=new Button();
-     @Test(dataProvider = "testdata", dataProviderClass = ReceptionOfDocsTestData.class)
-    public void receptionOfDocsTest(DocTo doc,
+    @Test(dataProvider = "testdata", dataProviderClass = ReceptionOfDocsTestData.class)
+    public void getRemains(DocTo doc,
                      BookOfValuesTo exp,
                      ValuesTo val) {
         List<RemainsValuesTo> listBefore=remainsValues.getRemains();

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Исправила вызов метода класса Button.">
+    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Исправила вызов метода класса Button в тесте бп &quot;Прием по документам&quot;.">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,21 +70,26 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="bapb" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2Mm2lkBIgrR2cBaBdmaXdJj45aw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/IdeaProjects/Testovoe_zadanie_Selenium&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/IdeaProjects/IdeaProjects/Testovoe_zadanie_Selenium",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -91,6 +99,9 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="pub" />
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn test" />
     </option>
   </component>
   <component name="RunManager" selected="TestNG.BuyCurrencyForCashTest">
@@ -274,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679496226805</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Исправила вызов метода класса Button в тесте бп &quot;Прием по документам&quot;.">
+      <created>1679496972359</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679496972359</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,9 +317,19 @@
     <MESSAGE value="Задание 4&#10;1) Добавлены страницы для бп &quot;Покупка валюты&quot;;&#10;2) Добавлен новый дата-провайдер;&#10;3) Добавлен новый тест." />
     <MESSAGE value="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце." />
     <MESSAGE value="Исправила вызов метода класса Button." />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправила вызов метода класса Button." />
+    <MESSAGE value="Исправила вызов метода класса Button в тесте бп &quot;Прием по документам&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправила вызов метода класса Button в тесте бп &quot;Прием по документам&quot;." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/PrintedFormPage.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.lang.NumberFormatException" memberName="backtrace" />
@@ -314,5 +342,8 @@
         <watch expression="driver" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Testovoe_zadanie_Selenium$BuyCurrencyForCashTest.ic" NAME="BuyCurrencyForCashTest Coverage Results" MODIFIED="1679561336376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
