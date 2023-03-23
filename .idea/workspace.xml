@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Исправила вызов метода класса Button в тесте бп &quot;Прием по документам&quot;.">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReceptionOfDocsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d84ecb4a-6302-4b36-b1a0-ef53c2c63345" name="Changes" comment="Часть 5&#10;1) Создала съют с тестами;&#10;2) Создала мавен профиль для запуска съюта." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -292,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679496972359</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Часть 5&#10;1) Создала съют с тестами;&#10;2) Создала мавен профиль для запуска съюта.">
+      <created>1679562236571</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679562236571</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,7 +319,8 @@
     <MESSAGE value="Задание 4&#10;1) Добавлен класс Button;&#10;2) Добавлен новый enum BuyCurrencyForCash;&#10;3) Изменен метод сравнения печатной формы на shouldHave;&#10;4) Добавлен метод сравнения остатков в начале теста и в конце." />
     <MESSAGE value="Исправила вызов метода класса Button." />
     <MESSAGE value="Исправила вызов метода класса Button в тесте бп &quot;Прием по документам&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправила вызов метода класса Button в тесте бп &quot;Прием по документам&quot;." />
+    <MESSAGE value="Часть 5&#10;1) Создала съют с тестами;&#10;2) Создала мавен профиль для запуска съюта." />
+    <option name="LAST_COMMIT_MESSAGE" value="Часть 5&#10;1) Создала съют с тестами;&#10;2) Создала мавен профиль для запуска съюта." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
